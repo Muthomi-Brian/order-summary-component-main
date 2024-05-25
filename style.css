@@ -29,7 +29,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100dvw;
-  font-size: 32px;
 }
 
 @media (width < 560px) {
@@ -38,7 +37,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100dvw;
-    font-size: 16px;
   }
 }
 
@@ -109,21 +107,21 @@ a {
 button {
   text-align: center;
   width: 100%;
-  font-size: 2rem;
+  font-size: 1.2rem;
   border: none;
-  background-color:var(--Bright-blue);
-  color:white;
+  background-color: var(--Bright-blue);
+  color: white;
   box-shadow: 0 0 1rem 0.1rem var(--Desaturated-blue);
   border-radius: 0.6em;
-  padding-block:0.8em;
+  padding-block: 0.8em;
   transition: background 50ms ease-out;
 }
-button:hover{
-    background-color: var(--Dark-blue);
-    scale:1.05;
+button:hover {
+  background-color: var(--Dark-blue);
+  scale: 1.05;
 }
 .attribution {
-  font-size: 2rem;
+  font-size: clamp(0.6rem, 0.8rem, 1rem);
   text-align: center;
   margin-top: 0.6em;
 }
