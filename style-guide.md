@@ -30,7 +30,7 @@ The designs were created to the following widths:
 
 ### Font
 
-- Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display)
+- Family: [Red Hat Display](https://fonts.ggoogle.com/specimen/Red+Hat+Display)
 - Weights: 500, 700, 900
 
 > 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma.

@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+@font-face {
+  font-family: redHat;
+  src: url(/assets/fonts/RedHatDisplay-VariableFont_wght.ttf) format(ttf);
+  font-weight: 400 800;
+}
+
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+  font-family: redHat, sans-serif;
+  background-image: url(/assets/images/pattern-background-desktop.svg);
+  background-color: var(--Desaturated-blue);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100dvw;
+  font-size: 32px;
+}
+
+@media (width < 560px) {
+  body {
+    background-image: url(/assets/images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100dvw;
+  }
+}
+
+.dark {
+  color: var(--Dark-blue);
+}
+
+.grey {
+  color: var(--Desaturated-blue);
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 5%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.container img {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 0.6em 0.6em 0 0;
+  height: 40%;
+}
+
+.sub-container {
+  background-color: var(--Very-pale-blue);
+  padding: 0.8em;
+  border-radius: 0 0 0.6em 0.6em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8em;
+}
+
+h1 {
+  color: var(--Dark-blue);
+  margin-bottom: 0.4em;
+}
+
+p {
+  line-height: 1.5;
+  color: var(--Desaturated-blue);
+}
+
+.charging-section {
+  background-color: var(--Pale-blue);
+  border-radius: 0.6em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6em;
+  width: 100%;
+}
+
+.charging-section img {
+  width: 4em;
+}
+
+a {
+  color: var(--Bright-blue);
+  text-decoration: underline;
+}
+
+button {
+  text-align: center;
+  width: 100%;
+  font-size: 2rem;
+  border: none;
+  background-color:var(--Bright-blue);
+  color:white;
+  box-shadow: 0 0 1rem 0.1rem var(--Desaturated-blue);
+  border-radius: 0.6em;
+  padding-block:0.8em;
+  transition: background 50ms ease-out;
+}
+button:hover{
+    background-color: var(--Dark-blue);
+    scale:1.05;
+}
+.attribution {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 0.6em;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
